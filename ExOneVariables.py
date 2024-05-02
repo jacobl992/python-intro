@@ -1,4 +1,5 @@
-age = 25
+desired_age = 25
+real_age = 31
 name = 'Jake'
-print(name + " is " + str(age) + " years old.")
+print(name + " wants to be " + str(age) + " years old.")
 
