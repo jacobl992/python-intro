@@ -19,3 +19,7 @@ print('What is the last letter in the name?')
 print(name[-1])
 print('What are the middle two letters in the name?')
 print(name[1:3])
+
+#formatted string
+msg = f'{name} [{real_age}] wants to be {desired_age}.'
+print(msg)
