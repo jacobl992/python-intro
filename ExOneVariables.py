@@ -1,3 +1,5 @@
+#simple variable definitions
+exercise_title = 'Basic Intro to Variables'
 desired_age = 25
 real_age = 31
 name = 'Jake'
@@ -23,3 +25,12 @@ print(name[1:3])
 #formatted string
 msg = f'{name} [{real_age}] wants to be {desired_age}.'
 print(msg)
+
+#string methods
+print(len(exercise_title))
+print(exercise_title.upper())
+print(exercise_title.lower())
+print(exercise_title.title())
+print(exercise_title.find('V'))
+print(exercise_title.replace('Variables', 'Variables for Beginners'))
+print('Variables' in exercise_title)
