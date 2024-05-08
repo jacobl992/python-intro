@@ -7,3 +7,9 @@ elif is_cold:
     print('Stay warm')
 else:
     print('Relax')
+
+#logical operators
+    #and
+    #or
+    #not
+    #< and > and !=
