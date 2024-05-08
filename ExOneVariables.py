@@ -1,3 +1,4 @@
+import math
 #simple variable definitions
 exercise_title = 'Basic Intro to Variables'
 desired_age = 25
@@ -34,3 +35,11 @@ print(exercise_title.title())
 print(exercise_title.find('V'))
 print(exercise_title.replace('Variables', 'Variables for Beginners'))
 print('Variables' in exercise_title)
+
+#maths methods
+x = 2.9
+print(round(x))
+print(abs(-x))
+print(math.ceil(x))
+print(math.floor(x))
+#check math documentation for more methods
