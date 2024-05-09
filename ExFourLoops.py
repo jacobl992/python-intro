@@ -26,7 +26,7 @@ while guess_count < guess_limit and not correct_guess:
 
 #car game
 command = ("")
-car_stopped = False
+car_stopped = True
 car_started = False
 while True:
     command = input("> ").lower()
