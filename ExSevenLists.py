@@ -49,3 +49,12 @@ numbers.sort()
 numbers2 = numbers.copy()
     #creates second table with copied data
 
+#remove duplicates
+list_with_duplicates = [5, 7, 8, 1, 1, 1, 3, 11, 11, 12, 4, 4, 5, 5, 5]
+unique_list = []
+
+for item in list_with_duplicates:
+    if item not in unique_list:
+        unique_list.append(item)
+print(unique_list)
+
