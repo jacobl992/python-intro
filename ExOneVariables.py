@@ -92,3 +92,18 @@ for digit in phone_number:
     #can either use the .get method which allows a default case for it digit not found in dictionary
 print(output)
 print(output2)
+
+#challenge emoji converter
+
+message = input(">")
+words = message.split(' ')
+emojis = {
+    ":)": "😀",
+    ":(": "🙁"
+}
+
+output = ""
+for word in words:
+    output += emojis.get(word, word) + " "
+    #this is saying look up word in emojis library, if not there, just use the word
+print(output)
