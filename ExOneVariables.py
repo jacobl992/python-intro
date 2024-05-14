@@ -56,3 +56,39 @@ x, y, z = coordinates
 print(x)
     #coordinates currently set as tuple, but could also be a list!!
 
+#Dictionaries
+    #storing key-value pairs
+customer = {
+    "name": "John Smith",
+    "age": 30,
+    "is_verified": True
+}
+    #each key must be unique
+print(customer["name"])
+customer["name"] = "David Blurg"
+    #change data stored in dictionary
+
+#challenge - convert number digits to words
+number_spelling = {
+    0: "Zero",
+    1: "One",
+    2: 'Two',
+    3: 'Three',
+    4: 'Four',
+    5: 'Five',
+    6: 'Six',
+    7: 'Seven',
+    8: 'Eight',
+    9: 'Nine'
+}
+
+phone_number = "07342859142"
+output = ""
+output2 = ""
+
+for digit in phone_number:
+    output += number_spelling[int(digit)] + " "
+    output2 += number_spelling.get(int(digit), "not found") + " "
+    #can either use the .get method which allows a default case for it digit not found in dictionary
+print(output)
+print(output2)
