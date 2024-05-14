@@ -42,4 +42,17 @@ print(round(x))
 print(abs(-x))
 print(math.ceil(x))
 print(math.floor(x))
-#check math documentation for more methods
+    #check math documentation for more methods
+
+#tuples
+    #immutable variables, cannot be modified, assign using parentheses '()'
+tuple_numbers = (1, 2, 3)
+
+#unpacking
+    #simplifying assigning variables
+coordinates = (1, 2, 3)
+x, y, z = coordinates
+    #unpacking allows simplified assignment of variables x, y and z to coordinates[0], coordinates[1], coordinates[2]
+print(x)
+    #coordinates currently set as tuple, but could also be a list!!
+
