@@ -4,6 +4,7 @@ class Point:
         self.x = x
         self.y = y
         #setting the x or y attribute to the x or y argument passed to this function
+        #the correct syntax for Python is to use two blank lines after functions/methods
 
 
     def move(self):
@@ -26,3 +27,19 @@ point2.x = 1
 #point1 and point2 are both seperate instances of the Point class
 # They can draw on the same methods, but have different values
 
+#another class example
+
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+
+    def talk(self):
+        print(f'Hi, I am {self.name}')
+
+
+john = Person('John Smith')
+john.talk()
+
+bob = Person('Bob Smith')
+bob.talk()
