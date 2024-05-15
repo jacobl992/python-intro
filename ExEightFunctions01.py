@@ -1,3 +1,6 @@
+import converters
+    #this import is importing everything from the converters module
+    #you can also use 'from converters import "function name"
 #basic function
 def greet_user(name):
     print(f'Hi there, {name}!')
@@ -23,20 +26,12 @@ result = square(3)
 print(result)
 
 #remaking emoji conversion as function
+    #i have move the emoji conversion function to the converters module, and imported it at the top
 
 message = input(">")
 emojis = {
     ":)": "😀",
     ":(": "🙁"
 }
-def emoji_conversion(message, emojis):
-    words = message.split(' ')
 
-
-    output = ""
-    for word in words:
-        output += emojis.get(word, word) + " "
-    return output
-
-
-print(emoji_conversion(message,emojis))
+print(converters.emoji_conversion(message,emojis))
