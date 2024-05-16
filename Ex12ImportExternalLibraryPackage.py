@@ -1,5 +1,6 @@
 import random
     #this module is in the external libraries
+from pathlib import Path
 
 for i in range(3):
     print(random.random())
@@ -22,3 +23,16 @@ class Dice:
 
 dice = Dice()
 print(dice.roll(6, 3))
+
+#file paths with Python
+
+path = Path()
+#print(path.glob('*.xls'))
+    # this would find all excel files
+print(path.glob('*.py'))
+    # this would find all python files
+    # after you run this you get a generator object
+    # this can be iterate over:
+
+for file in path.glob('*.py'):
+    print(file)
